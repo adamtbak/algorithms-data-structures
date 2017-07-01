@@ -1,7 +1,10 @@
 /*
- * This class implements the logic necessary to calculate an exponent expression.
- * For example, we are able to calculate the value x^n, where x and n are
- * both integers. This class implements recursion to create a solution.
+ * This class calculates the exponentiation of a number, in other words,
+ * it calculates the value of the expression, x raised to the power or n,
+ * written also as x^n.
+ *
+ * The recursive formula for the x^n is given by:
+ * x^n = x * x^(n-1)
  *
  */
 
@@ -15,8 +18,7 @@ public class Exponentiation
             System.out.println("2^" + i + " : " + exp(2, i));
         }        
     }
-    
-    /* This method uses recursion to calculate the value x^n */
+   
     private static long exp(int x, int n)
     {
         if(n == 0)
