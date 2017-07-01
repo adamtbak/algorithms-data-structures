@@ -1,7 +1,18 @@
 /*
- * This class creates a solution to the n factorial problem using recursion.
+ * This class calculates the factorial of a number using recursion.
  *
- * Author: Adam Bak 
+ * The factorial of a number n, is defined by the following formula:
+ * n! = n * (n-1) * (n-2) * ... * 1
+ * 
+ * We are also able to define n! using the following recursive formula:
+ * n! = n * (n-1)!
+ *
+ * One thing to bear in mind, is that the factorial is defined for 0,
+ * hence, we have: 0! = 1. 
+ *
+ * The first 5 factorials are given as follows:
+ * 0! = 1, 1! = 1, 2! = 2, 3! = 6, 4! = 24, 5! = 120
+ *
  */
 
 public class Factorial 
@@ -14,7 +25,6 @@ public class Factorial
         }
     }
     
-    /* This method uses recursion to calculate the factorial of the number n */
     private static long factorial(long n)
     {
         if(n == 0)
